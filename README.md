@@ -38,7 +38,10 @@ This is a convenient way to use the service from command line
 utilities like curl.
 
 ```sh
-curl -X POST -vv -F 'file=@path/to/local/file.html' http://<docker-host>:<port>/ -o path/to/output/file.pdf
+curl -X POST -vv -F 'file=@path/to/local/file.html' http://<docker-host>:<port>/ -o path/to/output/file.pdf -----------> convert html file to pfd
+
+
+curl -X POST -vv -F 'site=google.com' http://217.76.48.198:49153/ -o /root/file.pdf  ---------> convert site to pfd
 ```
 
 where:
